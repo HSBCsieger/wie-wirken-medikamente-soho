@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --light: #f6f6f9;
+  --primary: #1976D2;
+  --light-primary: #CFE8FF;
+  --grey: #eee;
+  --dark-grey: #AAAAAA;
+  --dark: #363949;
+  --danger: #D32F2F;
+  --light-danger: #FECDD3;
+  --warning: #FBC02D;
+  --light-warning: #FFF2C6;
+  --success: #388E3C;
+  --light-success: #BBF7D0;
+  --orange: #E56A0D;
+  --light-orange: #EE9F64;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: 'PT Serif', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.45rem;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  text-align: center;
+  width: calc(100vw - 10px);
+  border: solid 1px var(--light);
+  background: var(--light-primary);
+  color: #000;
+  margin: 0 5px 10px 5px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.inhaltsverzeichnis {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 0 5px 0 5px;
+  border: solid 1px var(--light);
+  background: var(--light-success);
+  padding: 0 1rem 1rem 1rem;
+  max-width: 500px;
+}
+
+.inhaltsverzeichnis li {
+  margin: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  margin: 0.7rem 0 0.7rem 0;
+  border-bottom: solid 2px var(--dark);
+  width: 100%;
+}
+
+.was-sind-medis {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  border: solid 1px var(--light);
+  background: var(--light-orange);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+}
+
+.formen-medis {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--dark-grey);
+}
+
+.anwendung-medis {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-warning);
+}
+
+.anwendung-medis li {
+  margin: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.wirkung {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 0 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-success);
+}
+
+.ohne-nebenwirkung {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-orange);
+}
+
+.viele-nebenwirkungen {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--dark-grey);
+}
+
+.viele-nebenwirkungen li {
+  margin: 10px;
+}
+
+.wichtiges-bei-einnahme {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-danger);
+}
+
+.placebos {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-success);
+}
+
+.was-sind-heilkraeuter {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-orange);
+}
+
+.heilkraeuter-medis-ersetzen {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--dark-grey);
+}
+
+.bekannte-heilpflanzen {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-warning);
+}
+
+.bekannte-heilpflanzen li {
+  margin: 10px;
+}
+
+.wichtig-bei-heilpflanzen {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-success);
+}
+
+.wichtig-bei-heilpflanzen li {
+  margin: 10px;
+}
+
+.pfeil {
+  font-size: 2rem;
+}
+
+.entdeckung-antibiotika {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--light-orange);
+}
+
+.was-passiert-in-apotheke {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+  background: var(--dark-grey);
+}
+
+.f {
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw - 10px);
+  margin: 10px 5px 0 5px;
+  padding: 0 1rem 1rem 1rem;
+  border: solid 1px var(--light);
+}
+
+.f1 {
+  background: var(--light-danger);
+}
+
+.f2 {
+  background: var(--light-success);
+}
+
+.f3 {
+  background: var(--light-orange);
+}
+
+.f4 {
+  background: var(--dark-grey);
+}
+
+.f5 {
+  background: var(--light-warning);
+}
+
+.f6 {
+  background: var(--light-success);
+}
+
+.f7 {
+  background: var(--light-orange);
+}
+
+.f8 {
+  background: var(--dark-grey);
+}
+
+.f9 {
+  background: var(--light-warning);
+}
+
+.f10 {
+  background: var(--light-danger);
+}
+
+.f11 {
+  background: var(--light-success);
+}
+
+.f12 {
+  background: var(--light-orange);
+}
+
+.f13 {
+  background: var(--dark-grey);
+}
+
+.f14 {
+  background: var(--light-warning);
+}
+
+.f15 {
+  background: var(--light-danger);
+}
+
+.mitwirkende {
+  background: var(--light-success);
+  max-width: 400px;
+}
+
+.mitwirkende p:nth-child(1) {
+  margin: 10px 0 10px 0;
+}
+
+.mitwirkende p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.unsere-meinung {
+  background: var(--light-orange);
+  max-width: 400px;
+}
+
+.heilpflanzen {
+  height: 120px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.umfrage {
+  background: var(--dark-grey);
+  max-width: 650px;
+}
+
+.umfrage-bild {
+  width: 600px;
+  height: 450px;
+}
+
+@media (max-width: 1000px) {
+  
+  .eins {
+    width: 400px;
+    height: 100px;
+  }
+  
+  .heilpflanzen {
+    height: 120px;
+    width: 400px;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  
+  .zwei {
+    width: 300px;
+    height: 100px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  
+  .zwei {
+    width: 400px;
+    height: 100px;
+  }
+
+  .umfrage-bild {
+    height: 280px;
+    width: 350px;
+  }
+  
+  
+}
+
+@media (max-width: 500px) {
+  
+  .zwei {
+    width: 350px;
+    height: 100px;
+  }
+  
+  .heilpflanzen {
+    height: 60px;
+    width: 200px;
+  }
+  
+}
